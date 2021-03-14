@@ -11,6 +11,8 @@
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" /> -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/open-iconic/font/css/open-iconic-bootstrap.css">
     <link rel="stylesheet" href="css/cbstyles.css" />
 
     <title>Choice Blend Studio - Kendall's Recording and Rehearsal Studio</title>
@@ -18,44 +20,180 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-light navi sticky-top second m-0 p-0">
+        <div class="container container-fluid m-0 p-0">
+            <div class="col-3 pl-2 pr-0">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" /></a>
+            </div>
+            <div class="col-6 flex-fill order-2">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#cbNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="cbNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ourwork.html">Our Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                        <li class="nav-item d-md-none"><a class="nav-link btn btn-danger" href="#quoteform">Get A Quote</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-end text-nowrap order-md-last ml-auto">
+                <a class="btn btn-outline d-none d-md-inline" href="#">Get A Quote</a>
+            </div>
+        </div>
+    </nav>
 
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
+    <header class="jumbotron jumbotron-fluid pt-0 pb-0">
+        <div class="container container-fluid">
             <div class="row">
-                <div class="col">
-                    <h1>Choice Blend Studio</h1>
-                    <h2>Recording and Rehearsal for Musicians by Musicians</h2>
+                <div class="col p-0 m-0">
+                    <img src="images/homeimage1fullsize.png" class="img-fluid" />
+                    <button class="btn btn-dark text-white btn-lg" id="bookButton">Book A Rehersal</button>
+                    <button class="btn btn-dark text-white btn-lg" id="quoteButton">Get A Quote</button>
                 </div>
             </div>
         </div>
     </header>
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
-            </div>
             <div class="col">
-                <h3>Our Campsites</h3>
-                <p>Explore our growing database of curated campsites and leave your own reviews!</p>
+                <h2>About Choice Blend</h2>
+            <p>Choice Blend Studio has been in business since 2007 in the West Kendall area of Miami, Florida. Known as a popular rehearsal spot for many artists and bands in the Miami-area,  we also provide top-notch recording and mixing services. Choice Blend provides a comfortable, professional studio environment, whether you're looking for a place to record your next project or a to rehearse for a couple of hours.</p>
             </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2>Featured Campsites</h2>
-            </div>
-            <div class="col">
-                <h3>React Lake Campground</h3>
-                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+            <div class="col-12">
+                <h2>Services</h2>
+                <div class="row">           
+                    <div class="col-4 card services bg-dark">
+                        <i class="fa fa-music fa-5x center pt-2 pb-3" aria-hidden="true"></i>
+                        <div class="card-header">
+                            <h3 class="card-title center">REHEARSALS</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text center">Book a few hours in our relaxed and intimate rehearsal room and jam away worry-free. Bring your gear or use ours.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn second text-white">More details</a>
+                        </div>
+                    </div>
+                    <div class="col-4 card services bg-dark">
+                        <img src="images/Frequecy.svg" class="mx-auto d-block frequecy" />
+                        <div class="card-header">
+                            <h3 class="card-title center">RECORDING</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text center">We offer top-notch recording services in a comfortable, professional recording studio environment.<br /></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn second text-white">More details</a>
+                        </div>
+                    </div>
+                    <div class="col-4 card services bg-dark">
+                        <img src="images/faders.svg" class="mx-auto d-block fader">
+                        <div class="card-header">
+                            <h3 class="card-title center">MIXING</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text center">Trust us to make your project sound the way you heard it in your head when you were creating it. We offer a full range of mixing services. </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn second text-white">More details</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Our Community Partners</h2>
+
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Reviews</h2>
             </div>
-            <div class="col">
-                <h3>Bootstrap Outfitters</h3>
-                <p>Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+            <div class="col-8">
+                <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#reviewCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#reviewCarousel" data-slide-to="1"></li>
+                    <li data-target="#reviewCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card main col-11">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="card-footer">
+                                        <blockquote class="blockquote card-text">
+                                            <p class="card-text">Our First Rehearsal at this studio went off without a hitch. Got there met Mike (Cool dude), we immediately took to the very comfortable vibe in the studio.  Everything was clean, organized and very relaxing vibe.  Whats nice is we didn't have to bring alot of gear as they provide the amps, drums, and microphones. So we got set up and Mike came out gave us a sound check, set our levels professionally, and were off and practicing in no time. Just a great vibe playing and 5 hours went by like that! We found our new home here for rehearsals. Awesome experience dealing with this studio, You won't regret it! Thanks Mike!</p>
+                                            <footer class="blockquote-footer">Monty Deane</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card main col-11">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="card-footer">
+                                        <blockquote class="blockquote card-text">
+                                            <p class="card-text">Choice Blend is the best studio I've ever worked with. Michael is such a kind and talented audio engineer. He not only worked magic on my tracks through recording, mixing, and mastering, but also added beautiful MIDI drum parts that really took them to the next level. Choice Blend has such a warm and welcoming environment that made recording a dream! Michael is also so patient and flexible with adjustments, going above and beyond to give you a product that's authentic and a working environment that's comfortable. The affordable rates are a testament to Michael's passion for elevating small, independent artists. I couldn't recommend this studio more!</p>
+                                            <footer class="blockquote-footer">Gio Navas</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card main col-11">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-2x text-warning" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="card-footer">
+                                        <blockquote class="blockquote card-text">
+                                            <p class="card-text">Excellent pricing and schedule flexibility. Solid backline and acoustics as well.</p>
+                                            <footer class="blockquote-footer">Andrzej GG</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <h3>LEAVE US A REVIEW</h3>
+                <p>We love to receive feedback from our clients. If you've rehearsed, recorded, or mixed your project with us, we'd love to hear from you.</p>
+                <a href="https://g.page/ChoiceBlend/review?gm" target="_blank" class="btn second btn-lg text-white">Leave A Review on Google</a>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-6">
+                <h4 class="center">CHECK OUT WHAT'S BEEN GOING ON AT CHOICE BLEND</h4>
+                <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                <iframe src="//lightwidget.com/widgets/ec160a38f79a518f89d873528ced3046.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            </div>
+            <div class="col-5 map">
+                <h4 class="center">HERE'S WHERE TO FIND US</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.762668223117!2d-80.41140081635298!3d25.646001239914455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9c1764c380c3d%3A0x606c712d7e815ac0!2sChoice%20Blend%20Studio!5e0!3m2!1sen!2sus!4v1615685494857!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
@@ -64,24 +202,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
+                    <h5>Site Map</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ourwork.html">Our Work</a></li>
+                        <li><a href="book.html">Book</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
-                    <a href="http://instagram.com/">Instagram</a>
-                    <a href="http://facebook.com/">Facebook</a>
-                    <a href="http://twitter.com/">Twitter</a>
-                    <a href="http://youtube.com/">YouTube</a>
+                    <a href="http://instagram.com/choiceblendstudio"><i class="fa fa-instagram fa-2x text-white p-1" aria-hidden="true"></i></a>
+                    <a href="http://facebook.com/choiceblend"><i class="fa fa-facebook fa-2x text-white p-1" aria-hidden="true"></i></a>
+                    <a href="http://souncloud.com/choiceblend"><i class="fa fa-soundcloud fa-2x text-white p-1" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    Tel: 1-206-555-1234<br />
-                    Email: campsites@nucamp.co
+                    Tel: <a class="text-white" href="tel:3058151515">305.815.1515</a><br />
+                    Email: <a class="text-white" href="mailto:chocienblendstudio@gmail.com">chocienblendstudio@gmail.com</a>
                 </div>
     </footer>
 
